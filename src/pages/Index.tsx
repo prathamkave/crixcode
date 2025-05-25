@@ -76,7 +76,7 @@ const Index = () => {
               </div>
             </div>
             <Badge variant="secondary" className="bg-green-100 text-green-800">
-              Professional Edition
+              Premium Edition
             </Badge>
           </div>
         </div>
