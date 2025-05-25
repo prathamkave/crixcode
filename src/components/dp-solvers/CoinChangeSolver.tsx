@@ -92,7 +92,7 @@ const CoinChangeSolver = () => {
         {/* Input Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-gray-50 rounded-lg">
           <div>
-            <Label htmlFor="amountInput">Target Amount (¢)</Label>
+            <Label htmlFor="amountInput">Target Amount ($)</Label>
             <Input
               id="amountInput"
               type="number"
@@ -134,7 +134,7 @@ const CoinChangeSolver = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {coins.map((coin) => (
                 <div key={coin} className="text-center p-4 bg-gray-50 rounded-lg">
-                  <div className="text-2xl font-bold text-gray-700">{coin}¢</div>
+                  <div className="text-2xl font-bold text-gray-700">{coin}$</div>
                   <div className="text-sm text-gray-600">{getCoinName(coin)}</div>
                   {solution && (
                     <div className="mt-2">
@@ -187,7 +187,7 @@ const CoinChangeSolver = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-3 bg-orange-50 rounded-lg">
                     <span>Target Amount:</span>
-                    <span className="font-bold text-orange-600">{targetAmount}¢</span>
+                    <span className="font-bold text-orange-600">{targetAmount}$</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
                     <span>Minimum Coins:</span>
@@ -218,7 +218,7 @@ const CoinChangeSolver = () => {
               <ResponsiveContainer width="100%" height={300}>
                 <BarChart data={dpData.slice(0, 30)}>
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="amount" label={{ value: 'Amount (¢)', position: 'insideBottom', offset: -10 }} />
+                  <XAxis dataKey="amount" label={{ value: 'Amount ($)', position: 'insideBottom', offset: -10 }} />
                   <YAxis label={{ value: 'Min Coins', angle: -90, position: 'insideLeft' }} />
                   <Tooltip formatter={(value) => [value, 'Min Coins']} />
                   <Bar dataKey="minCoins" fill="#8884d8" />

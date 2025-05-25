@@ -70,9 +70,9 @@ const Index = () => {
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  CrixDP
+                  CrixCode
                 </h1>
-                <p className="text-sm text-gray-600">Dynamic Programming Solver</p>
+                <p className="text-sm text-gray-600">Programming Decoder</p>
               </div>
             </div>
             <Badge variant="secondary" className="bg-green-100 text-green-800">
@@ -86,11 +86,11 @@ const Index = () => {
         {/* Hero Section */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Master Dynamic Programming
+            Master Programming
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Interactive visualizations and step-by-step solutions for classic DP problems. 
-            Learn, practice, and understand the beauty of dynamic programming.
+            Interactive visualizations and step-by-step solutions for classic problems. 
+            Learn, practice, and understand the beauty of competative programming.
           </p>
         </div>
 
